@@ -8,9 +8,8 @@
     const idl = getIdeal();
     const csrf = idl.csrf
     const xtoken = idl.xtoken;
-    if (location.href.indexOf('playentry.org/ws') >= 0){
-        e = window
-    }else {
+    e = window
+    if (location.href.indexOf('playentry.org/ws') < 0){
         e = document.getElementsByTagName('iframe')[0].contentWindow
     }
     id = e.user._id
